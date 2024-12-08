@@ -1,0 +1,178 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.container {
+    border: 2px solid rgb(255, 255, 255);
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    /* background-image: url('https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?cs=srgb&dl=pexels-pixabay-210019.jpg&fm=jpg'); */
+    background-size: cover;
+    background-color: grey;
+    margin: 0 auto;
+    margin-top: 160px;
+    padding: 20px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.container:hover {
+    animation: shadowPulse 1s infinite;
+  }
+
+  /* Keyframes for box shadow animation */
+  @keyframes shadowPulse {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(52, 152, 219, 0.6);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2), 0 0 50px rgba(52, 152, 219, 1);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(52, 152, 219, 0.6);
+    }
+  }
+
+
+
+
+
+h1 {
+    text-align: center;
+}
+
+input {
+
+    border-radius: 5px;
+    border: rebeccapurple;
+
+
+}
+
+
+
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.pexels.com/photos/912364/pexels-photo-912364.jpeg?cs=srgb&dl=pexels-brett-sayles-912364.jpg&fm=jpg') center/cover no-repeat;
+    /* Image background */
+    filter: blur(10px);
+    /* Apply blur effect */
+    z-index: -1;
+    /* Send it behind the content */
+    border-radius: 10px;
+    /* Optional rounded corners to match the parent */
+}
+
+button {
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes borderGlow {
+    0% {
+        border-color: rgba(4, 231, 99, 0.884);
+    }
+
+    50% {
+        border-color: #4608f0;
+    }
+
+    100% {
+        border-color: #0905f3e5;
+    }
+}
+
+.container {
+    padding: 20px;
+    border: 3px solid transparent;
+    animation: borderGlow 1.5s ease-in-out infinite;
+}
+
+
+
+
+input {
+    width: 50%;
+    /* Make the input field take the full width of its container */
+    padding: 10px;
+    /* Add space inside the input */
+    font-size: 16px;
+    /* Adjust the font size */
+    border: 2px solid #ccc;
+    /* Light gray border */
+    border-radius: 5px;
+    /* Rounded corners */
+    outline: none;
+    /* Remove the default focus outline */
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect width */
+}
+
+input:focus {
+    border-color: #4CAF50;
+    /* Green border on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    /* Subtle shadow on focus */
+}
+
+
+
+
+
+button {
+    padding: 10px;
+    /* Large padding for a heavy feel */
+    /* font-size: 18px; */
+    /* Larger text */
+    font-weight: 700;
+    /* Bold font weight */
+    color: white;
+    /* White text */
+    background-color: #4CAF50;
+    /* Green background */
+    border: 2px solid black;
+    /* Thick border */
+    /* border-radius: 8px; */
+    /* Rounded corners */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    /* Strong shadow for depth */
+    text-transform: uppercase;
+    /* Uppercase letters for emphasis */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: all 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+    border-color: #45a049;
+    /* Change border color on hover */
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+    /* Deeper shadow */
+    transform: translateY(-3px);
+    /* Slight lift effect on hover */
+}
